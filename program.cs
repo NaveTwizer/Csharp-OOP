@@ -77,7 +77,7 @@ namespace INA_EDITS
 
 
         public double GetDistanceFromAnotherPoint(Point p2)
-        { // לחשב מרחק מנקודה אחת 
+        { // לחשב מרחק מנקודה אחרת עם דיוק של 3 ספרות אחרי הנקודה העשרונית
             // distance = Math.sqrt ( (x1 - x2)^2 + (y1-y2)^2 )
             double d = Math.Round(Math.Sqrt(Math.Pow(this.x - p2.x, 2) + Math.Pow(this.y - p2.y, 2)), 3);
             return d;
